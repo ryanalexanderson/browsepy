@@ -17,7 +17,7 @@ class SGMLCompressContext(StateMachine):
             '<![CDATA[': 'cdata',
             },
         'lit1': {'"': 'tag'},
-        'lit2': ("'", 'tag'),
+        'lit2': {"'", 'tag'},
         'tag': {
             '>': 'text',
             '"': 'lit1',
